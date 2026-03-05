@@ -1,2 +1,3 @@
 # dam-proxytabs
-Proxy extension for Chrome. 
+Proxy extension V3 for Chrome. 
+

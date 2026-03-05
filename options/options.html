@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="settings-container">
+    <header class="settings-header">
+      <h1><img src="../icons/logo-green16.png"> Settings </h1>
+    </header>
+
+    <div class="status-box">
+      <div id="proxyStatus" class="status-indicator"></div>
+      <span id="proxyStatusText">Checking proxy status...</span>
+    </div>
+
+    <main class="settings-main">
+    <div class="section">
+      <h3>Proxy Server</h3>
+      <div class="input-group">
+        <input type="text" id="proxyHost" placeholder="Proxy address (e.g. 127.0.0.1)">
+        <input type="number" id="proxyPort" placeholder="Port (e.g. 8080)">
+      </div>
+    </div>
+      <hr>
+      
+      <div class="section">
+        <h3>Domains</h3>
+        <div class="domain-controls">
+          <input type="text" id="domainInput" placeholder="Add domain (e.g. example.com)">
+          <button id="addDomainBtn" class="icon-btn">+ Add</button>
+        </div>
+        <ul id="domainsList" class="domains-list"></ul>
+      </div>
+      
+      <div class="section" style="display: none;">
+        <div id="relatedDomainsAccordion"> 
+
+            <span>Related domains  </span>
+            <button id="toggleRelatedBtn">▼</button>
+
+          <div id="relatedDomainsList" class="accordion-content"></div>
+        </div>
+      </div>
+      
+      <!-- <button id="saveBtn" class="save-btn">Save Settings</button> -->
+      <div id="statusMessage"></div>
+    </main>
+
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

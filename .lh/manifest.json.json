@@ -1,0 +1,38 @@
+{
+    "sourceFile": "manifest.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1770986168827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1770986178041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     \"action\": {\r\n       \"default_popup\": \"popup/popup.html\",\r\n       \"default_icon\": {\r\n         \"16\": \"icons/logo-green16.png\",\r\n-        \"48\": \"icons/icon-blue48.png\",\r\n+        \"48\": \"icons/logo-green1648.png\",\r\n         \"128\": \"icons/icon-blue128.png\"\r\n       }\r\n     },\r\n     \"options_ui\": {\r\n"
+                },
+                {
+                    "date": 1770986188258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,10 @@\n     },\r\n     \"action\": {\r\n       \"default_popup\": \"popup/popup.html\",\r\n       \"default_icon\": {\r\n-        \"16\": \"icons/logo-green16.png\",\r\n-        \"48\": \"icons/logo-green1648.png\",\r\n+        \"16\": \"icons/logo-green16.png\",,\r\n+        \"48\": \"icons/logo-green48.png\",\r\n         \"128\": \"icons/icon-blue128.png\"\r\n       }\r\n     },\r\n     \"options_ui\": {\r\n"
+                },
+                {
+                    "date": 1770986195387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,10 @@\n     },\r\n     \"action\": {\r\n       \"default_popup\": \"popup/popup.html\",\r\n       \"default_icon\": {\r\n-        \"16\": \"icons/logo-green16.png\",,\r\n+        \"16\": \"icons/logo-green16.png\",\r\n+        \"16\": \"icons/logo-green16.png\",\r\n         \"48\": \"icons/logo-green48.png\",\r\n         \"128\": \"icons/icon-blue128.png\"\r\n       }\r\n     },\r\n"
+                },
+                {
+                    "date": 1770986214163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     \"action\": {\r\n       \"default_popup\": \"popup/popup.html\",\r\n       \"default_icon\": {\r\n         \"16\": \"icons/logo-green16.png\",\r\n-        \"16\": \"icons/logo-green16.png\",\r\n+        \"32\": \"icons/logo-green16.png\",\r\n         \"48\": \"icons/logo-green48.png\",\r\n         \"128\": \"icons/icon-blue128.png\"\r\n       }\r\n     },\r\n"
+                },
+                {
+                    "date": 1770986226226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,11 +22,11 @@\n     \"action\": {\r\n       \"default_popup\": \"popup/popup.html\",\r\n       \"default_icon\": {\r\n         \"16\": \"icons/logo-green16.png\",\r\n-        \"32\": \"icons/logo-green16.png\",\r\n+        \"32\": \"icons/logo-green32.png\",\r\n         \"48\": \"icons/logo-green48.png\",\r\n-        \"128\": \"icons/icon-blue128.png\"\r\n+        \"128\": \"icons/logo-green128.png\"\r\n       }\r\n     },\r\n     \"options_ui\": {\r\n       \"page\": \"options/options.html\",\r\n"
+                }
+            ],
+            "date": 1770986168827,
+            "name": "Commit-0",
+            "content": "{\r\n    \"manifest_version\": 3,\r\n    \"name\": \"Dam Proxy tabs\",\r\n    \"version\": \"1.0\",\r\n    \"description\": \"Dam Proxy tabs\",\r\n    \"permissions\": [\r\n      \"tabs\",\r\n      \"proxy\",\r\n      \"storage\",\r\n      \"webRequest\",\r\n      \"notifications\",\r\n      \"webRequestAuthProvider\",\r\n      \"webNavigation\",\r\n      \"activeTab\"\r\n    ],\r\n    \"host_permissions\": [\r\n      \"<all_urls>\"\r\n    ],\r\n    \"background\": {\r\n      \"service_worker\": \"background.js\"\r\n    },\r\n    \"action\": {\r\n      \"default_popup\": \"popup/popup.html\",\r\n      \"default_icon\": {\r\n        \"16\": \"icons/logo-green16.png\",\r\n        \"48\": \"icons/icon-blue48.png\",\r\n        \"128\": \"icons/icon-blue128.png\"\r\n      }\r\n    },\r\n    \"options_ui\": {\r\n      \"page\": \"options/options.html\",\r\n      \"open_in_tab\": false\r\n    }\r\n  }"
+        }
+    ]
+}

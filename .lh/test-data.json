@@ -1,0 +1,22 @@
+{
+    "sourceFile": "test-data",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1771227571998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1771227579720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,34 +1,34 @@\n-// //[\r\n-//     \"chatgpt.com\",\r\n-//     \"openai.com\",\r\n-//     \"oaistatic.com\",\r\n-//     \"youtube.com\",\r\n-//     \"2ip.ru\",\r\n-//     \"mista.ru\",\r\n-//     \"googlevideo.com\",\r\n-//     \"play.google.com\",\r\n-//     \"ytimg.com\",\r\n-//     \"spiceworks.com\",\r\n-//     \"cloudflare.com\",\r\n-//     \"solidworks.com\",\r\n-//     \"autodesk.com\",\r\n-//     \"adsrvr.org\",\r\n-//     \"canva.com\",\r\n-//     \"sketchup.com\",\r\n-//     \"malwarebytes.com\",\r\n-//     \"mbamupdates.com\",\r\n-//     \"googleusercontent.com\",\r\n-//     \"rusfishing.ru\",\r\n-//     \"v2raytun.com\",\r\n-//     \"getoutline.org\",\r\n-//     \"google.com\",\r\n-//     \"ntc.party\",\r\n-//     \"spotify.com\",\r\n-//     \"facebook.com\",\r\n-//     \"instagram.com\",\r\n-//     \"adobe.com\",\r\n-//     \"mattermost.com\",\r\n-//     \"medium.com\",\r\n-//     \"oocl.com\"\r\n-// ]\r\n-// //\n\\ No newline at end of file\n+//[\r\n+    \"chatgpt.com\",\r\n+    \"openai.com\",\r\n+    \"oaistatic.com\",\r\n+    \"youtube.com\",\r\n+    \"2ip.ru\",\r\n+    \"mista.ru\",\r\n+    \"googlevideo.com\",\r\n+    \"play.google.com\",\r\n+    \"ytimg.com\",\r\n+    \"spiceworks.com\",\r\n+    \"cloudflare.com\",\r\n+    \"solidworks.com\",\r\n+    \"autodesk.com\",\r\n+    \"adsrvr.org\",\r\n+    \"canva.com\",\r\n+    \"sketchup.com\",\r\n+    \"malwarebytes.com\",\r\n+    \"mbamupdates.com\",\r\n+    \"googleusercontent.com\",\r\n+    \"rusfishing.ru\",\r\n+    \"v2raytun.com\",\r\n+    \"getoutline.org\",\r\n+    \"google.com\",\r\n+    \"ntc.party\",\r\n+    \"spotify.com\",\r\n+    \"facebook.com\",\r\n+    \"instagram.com\",\r\n+    \"adobe.com\",\r\n+    \"mattermost.com\",\r\n+    \"medium.com\",\r\n+    \"oocl.com\"\r\n+]\r\n+//\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1771227571998,
+            "name": "Commit-0",
+            "content": "// //[\r\n//     \"chatgpt.com\",\r\n//     \"openai.com\",\r\n//     \"oaistatic.com\",\r\n//     \"youtube.com\",\r\n//     \"2ip.ru\",\r\n//     \"mista.ru\",\r\n//     \"googlevideo.com\",\r\n//     \"play.google.com\",\r\n//     \"ytimg.com\",\r\n//     \"spiceworks.com\",\r\n//     \"cloudflare.com\",\r\n//     \"solidworks.com\",\r\n//     \"autodesk.com\",\r\n//     \"adsrvr.org\",\r\n//     \"canva.com\",\r\n//     \"sketchup.com\",\r\n//     \"malwarebytes.com\",\r\n//     \"mbamupdates.com\",\r\n//     \"googleusercontent.com\",\r\n//     \"rusfishing.ru\",\r\n//     \"v2raytun.com\",\r\n//     \"getoutline.org\",\r\n//     \"google.com\",\r\n//     \"ntc.party\",\r\n//     \"spotify.com\",\r\n//     \"facebook.com\",\r\n//     \"instagram.com\",\r\n//     \"adobe.com\",\r\n//     \"mattermost.com\",\r\n//     \"medium.com\",\r\n//     \"oocl.com\"\r\n// ]\r\n// //"
+        }
+    ]
+}

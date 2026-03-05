@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Dam Proxy tabs",
+    "version": "1.0",
+    "description": "Dam Proxy tabs",
+    "permissions": [
+      "tabs",
+      "proxy",
+      "storage",
+      "webRequest",
+      "notifications",
+      "webRequestAuthProvider",
+      "webNavigation",
+      "activeTab"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": {
+        "16": "icons/logo-green16.png",
+        "32": "icons/logo-green32.png",
+        "48": "icons/logo-green48.png",
+        "128": "icons/logo-green128.png"
+      }
+    },
+    "options_ui": {
+      "page": "options/options.html",
+      "open_in_tab": false
+    }
+  }

@@ -1,0 +1,18 @@
+{
+    "sourceFile": ".gitignore",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1771227590988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1771227590988,
+            "name": "Commit-0",
+            "content": ".hl\r\n.history\r\n.vscode\r\ntest-data"
+        }
+    ]
+}
