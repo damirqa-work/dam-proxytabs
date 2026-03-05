@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.toggleBtn.addEventListener('change', handleToggle);
     elements.addCurrentBtn.addEventListener('click', addCurrentDomain);
     elements.settingsBtn.addEventListener('click', () => chrome.runtime.openOptionsPage());
-    elements.bugsBtn.addEventListener('click', () => chrome.tabs.create({ url: 'https://github.com/damirqa-work/damproxytabs/issues/' }));
+    elements.bugsBtn.addEventListener('click', () => chrome.tabs.create({ url: 'https://github.com/damirqa-work/dam-proxytabs/issues/' }));
     elements.donateBtn.addEventListener('click', handleDonateBtn);
     elements.copyBtn.addEventListener("click", handleCopyText);
 
