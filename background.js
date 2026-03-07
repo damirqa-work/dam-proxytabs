@@ -166,6 +166,26 @@ function setupMessageHandlers() {
   });
 }
 
+async function handleUnproxiedCollector(details) {
+
+  if (!extensionState.isEnabled) return;
+  if (details.tabId < 0) return;
+
+  try {
+
+    const url = new URL(details.url);
+    const domain = extractMainDomain(url.hostname);
+
+    const proxiedDomains = extensionState.proxySettings.domains;
+
+    if (!proxiedDomains.includes(domain)) {
+      await addUnproxiedDomain(details.tabId, domain);
+    }
+
+  } catch (e) {}
+
+}
+
 function extractMainDomain(hostname) {
 
   const parts = hostname.replace(/^www\./, '').split('.');
