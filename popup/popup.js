@@ -220,19 +220,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function loadUnproxiedDomains() {
 
-  const result = await chrome.storage.local.get("unproxiedDomains");
+    const result = await chrome.storage.local.get("unproxiedDomains");
 
-  const data = result.unproxiedDomains || {};
+    const data = result.unproxiedDomains || {};
 
-  const tabData = data[state.currentTab.id];
+    const pageDomain =
+      extractMainDomain(new URL(state.currentTab.url).hostname);
 
-  if (!tabData) {
-    renderUnproxiedList([]);
-    return;
+    const tabData = data[pageDomain];
+
+    if (!tabData) {
+
+      renderUnproxiedList([]);
+      return;
+
+    }
+
+    renderUnproxiedList(tabData.domains);
+
   }
 
-  renderUnproxiedList(tabData.domains);
-}
+ renderUnproxiedList(tabData.domains);
+
   
 
   function renderUnproxiedList(domains) {

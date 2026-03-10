@@ -173,16 +173,49 @@ async function handleUnproxiedCollector(details) {
 
   try {
 
-    const url = new URL(details.url);
-    const domain = extractMainDomain(url.hostname);
+    const tab = await chrome.tabs.get(details.tabId);
+
+    if (!tab.url) return;
+
+    const pageDomain = extractMainDomain(new URL(tab.url).hostname);
+    const requestDomain = extractMainDomain(new URL(details.url).hostname);
 
     const proxiedDomains = extensionState.proxySettings.domains;
 
-    if (!proxiedDomains.includes(domain)) {
-      await addUnproxiedDomain(details.tabId, domain);
-    }
+    if (proxiedDomains.includes(requestDomain)) return;
+
+    if (pageDomain === requestDomain) return;
+
+    await addUnproxiedDomain(pageDomain, requestDomain);
 
   } catch (e) {}
+
+}
+
+async function addUnproxiedDomain(pageDomain, domain) {
+
+  const storage = await chrome.storage.local.get("unproxiedDomains");
+
+  const data = storage.unproxiedDomains || {};
+
+  if (!data[pageDomain]) {
+
+    data[pageDomain] = {
+      domains: [],
+      timestamp: Date.now()
+    };
+
+  }
+
+  if (!data[pageDomain].domains.includes(domain)) {
+
+    data[pageDomain].domains.push(domain);
+
+  }
+
+  data[pageDomain].timestamp = Date.now();
+
+  await chrome.storage.local.set({ unproxiedDomains: data });
 
 }
 
