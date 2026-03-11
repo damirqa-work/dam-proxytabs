@@ -127,7 +127,12 @@ function setupWebRequestListeners() {
 
   chrome.webRequest.onBeforeRequest.addListener(
     handleUnproxiedCollector,
-    { urls: ['<all_urls>'] }
+    {urls: [
+      "http://*/*",
+      "https://*/*",
+      "ws://*/*",
+      "wss://*/*"
+    ]}
   );
 
 }

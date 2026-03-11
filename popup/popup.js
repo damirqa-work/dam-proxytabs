@@ -240,8 +240,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 
- renderUnproxiedList(tabData.domains);
-
   
 
   function renderUnproxiedList(domains) {
